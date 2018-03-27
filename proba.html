@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Proba</title>
+		<link href="public/css/jquery.bxslider.css" rel="stylesheet" />
+	</head>
+	<body>
+	
+		<ul class="slider">
+	
+			<li>
+				<img src="public/images/4.jpg" id="sl" alt="{{ $picture->alt }}" class="img-responsive">
+			</li>
+		</ul>
+	
+		<script src="public/js/jquery.bxslider.js"></script>
+		<script type="text/javascript" src="http://bxslider.com/lib/jquery.bxslider.js"></script>
+		<script type="text/javascript">
+			$('.slider').bxSlider({
+			minSlides: 1,
+		   maxSlides: 4,
+		   slideWidth: 170,
+		   ticker: true,
+		   speed: 10000
+		});
+	</body>
+</html>
